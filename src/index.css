@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-
-
 :root{
     --color-primary:#8750f7 ;
     --color-secondary : rgba(28 , 20 , 5 ,0.773);
@@ -18,7 +16,7 @@
     --border-radius-3:1.2rem;
     --border-radius-4:2rem;
     --border-radius-5:51px;
-    --gradient-1:liniear-gardient(260deg , var(--color-secondary) 0% , var(--color-primary) 100% );
+    --gradient-1: linear-gradient(260deg , var(--color-secondary) 0% , var(--color-primary) 100% );
     --card-rgb : 180,185,188;
     --card-border-rgb : 131 ,134, 135;
 }
@@ -94,7 +92,7 @@ img{
 }
 
 .btn_primary{
-    background: var(--gradient-1);
+    background:var(--gradient-1);
     color: var(--color-white);
     background-size: 200% auto;
     transition: var(--transition);   
@@ -159,7 +157,7 @@ img{
     width: 322px;
     height: 308px;
     background: var(--color-primary);
-    background: -0-linear-gradient(190deg , var(--color-primary)0% , rgba(115,67,210,0) 100%);
+    background: -0-linear-gradient(190deg , var(--color-primary)0% , rgba(94, 16, 250, 0) 100%);
     -webkit-filter: blur(150px);
     filter: blur(150px);
     z-index: -1;
