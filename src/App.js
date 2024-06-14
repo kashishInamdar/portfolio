@@ -1,7 +1,7 @@
 // import About from "./component/About";
 // import Contact from "./component/Contact";
 // import Footer from "./component/Footer";
-// import Header from "./component/Header";
+import Header from "./component/Header";
 import Navbar from "./component/Navbar";
 // import Project from "./component/Project";
 // import Services from "./component/Services";
@@ -13,8 +13,8 @@ function App() {
   return (
     <>
      <Navbar />
-     {/* <Header/>
-     <About/>
+      <Header/>
+     {/*<About/>
      <Services />
      <Skill />
      <Project />

@@ -114,14 +114,14 @@ img{
     -webkit-text-fill-color: transparent;
 }
 
-.primary_text{
+.primary_title{
     font-size: 55px;
     font-weight:900;
     margin:20px 0;
-    background-color: linear-gradient(to right , var(--color-primary) 0%, var(--color-white) 100%);
+    background: linear-gradient(to right , var(--color-primary) 0%, var(--color-white) 100%);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .section_wrapper{
@@ -157,7 +157,7 @@ img{
     width: 322px;
     height: 308px;
     background: var(--color-primary);
-    background: -0-linear-gradient(190deg , var(--color-primary)0% , rgba(94, 16, 250, 0) 100%);
+    background: linear-gradient(190deg , var(--color-primary)0% , rgba(94, 16, 250, 0) 100%);
     -webkit-filter: blur(150px);
     filter: blur(150px);
     z-index: -1;
