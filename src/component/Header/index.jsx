@@ -1,5 +1,6 @@
 import "./Header.css"
 import { profile1 } from "../../images";
+import Facts from "./Facts";
 
 const Header = ()=>{
     return(
@@ -9,7 +10,7 @@ const Header = ()=>{
                 <div className="column intro__container blur-effect ">
                     <div className="header__info">
                         <div className="header__info__top">
-                            Hello There! I am <span className="color_primary"> Kashish </span>
+                            Hello There! I am <span className="color_primary "> Kashish </span>
                         </div>
                         <div className="header__info__middle">
                             <h1 className="primary_title header__title">I'M A WEB DEVELOPER</h1>
@@ -18,12 +19,14 @@ const Header = ()=>{
                                 integrity-focused solutions that resonate with billions of users.
                             </p>
                         </div>
+                        <Facts />
                         <div className="header__info__bottom">
                             <button className="btn"> Download CV</button>
                             <a href="mailto:kashishofficial4690@gmail.com" className="btn">Email Me</a>
                         </div>
                     </div>
                 </div>
+
                 <div className="column profile__wrapper">
                     <div className="profile__photo__container">
                          <img src={profile1} alt="profile-photo" className="profile" />
