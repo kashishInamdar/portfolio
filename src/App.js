@@ -1,4 +1,4 @@
-// import About from "./component/About";
+import About from "./component/About";
 // import Contact from "./component/Contact";
 // import Footer from "./component/Footer";
 import Header from "./component/Header";
@@ -14,8 +14,8 @@ function App() {
     <>
      <Navbar />
       <Header/>
-     {/*<About/>
-     <Services />
+     <About/>
+     {/*<Services />
      <Skill />
      <Project />
      <Testimonials />
