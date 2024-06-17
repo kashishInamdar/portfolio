@@ -4,7 +4,7 @@ import About from "./component/About";
 import Header from "./component/Header";
 import Navbar from "./component/Navbar";
 // import Project from "./component/Project";
-// import Services from "./component/Services";
+import Services from "./component/Services";
 // import Skill from "./component/Skill";
 // import Testimonials from "./component/Testimonials";
 import "./App.css"
@@ -15,8 +15,8 @@ function App() {
      <Navbar />
       <Header/>
      <About/>
-     {/*<Services />
-     <Skill />
+     <Services />
+     {/*<Skill />
      <Project />
      <Testimonials />
      <Contact />
