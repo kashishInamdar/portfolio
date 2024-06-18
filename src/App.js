@@ -5,7 +5,7 @@ import Header from "./component/Header";
 import Navbar from "./component/Navbar";
 // import Project from "./component/Project";
 import Services from "./component/Services";
-// import Skill from "./component/Skill";
+import Skill from "./component/Skill";
 // import Testimonials from "./component/Testimonials";
 import "./App.css"
 
@@ -16,11 +16,11 @@ function App() {
       <Header/>
      <About/>
      <Services />
-     {/*<Skill />
-     <Project />
-     <Testimonials />
-     <Contact />
-     <Footer /> */}
+     <Skill />
+     {/* <Project /> */}
+     {/* <Testimonials /> */}
+     {/* <Contact /> */}
+     {/* <Footer />  */}
     </>
   );
 }

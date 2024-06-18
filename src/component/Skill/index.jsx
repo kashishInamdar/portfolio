@@ -1,11 +1,29 @@
-import "./Skill.css"
+import "./Skill.css";
+import {experience} from "../../data"
+import SkillCard from "./SkillCard";
 
-const Skill =()=>{
-    return(
-        <div>
-            <h1>This is Skills</h1>
+
+
+const Skill = () => {
+  return (
+    <section id="skill">
+      <div className="section_wrapper">
+        <div className="section_header center">
+            <h2 className="primary_title">My Skills</h2>
         </div>
-    )
-}
+        <div className="skill__container">
+            {
+                experience.map((list , index)=>(
+                    <SkillCard 
+                    {...list}
+                    key={index}
+                    />
+                ))
+            }
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Skill ;
+export default Skill;
