@@ -3,6 +3,7 @@
     align-items: stretch ;
     justify-content: space-between;
     padding: 20px;
+    margin-bottom: 0;
     position: relative;
     width: 100%;
 }

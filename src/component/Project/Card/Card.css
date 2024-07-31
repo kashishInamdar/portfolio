@@ -63,10 +63,76 @@
 
 .card .card__details .card__details__middle{
     padding-bottom: 1rem;
-    border-bottom: 1px solid  var(--color-primary);
+    border-bottom: 1px solid  rgba(var(--color-primary),0.15);
+    height: 160px;
+    overflow-x: hidden;
+    overflow-y: auto;
 
 }
 
-.card .card__details .card__details__top{
-    border: none;
+.card .card__details .card__details__middle .description{
+    font-size: 14px;
 }
+
+.card .card__details .card__details__bottom{
+    padding: 1rem 0 ;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Stack */
+
+.card .stack__container{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.card .stack__container .stack__left{
+    border: 1px solid rgba(var(--card-border-rgb),0.15);
+    padding: 0 0.5rem;
+    border-radius: var(--border-radius-2);
+    background: rgba(var(--card-rgb),0.1);
+    align-items: center;
+    display: flex;
+}
+
+.card .stack__container .stack__right{
+    flex: 1;
+}
+
+.card .stack__container .stack__right .stack__box__container 
+.stack__box .stack__icon__container .stack__icon{
+    display: flex;
+    align-items: center;
+}
+
+.card .stack__container .stack__right .stack__box , 
+.stack__view__more{
+    border-radius: var(--border-radius-2);
+    background: rgba(var(--card-rgb),0.1);
+    border: 1px solid rgba(var(--card-border-rgb),0.15);
+    padding: 1rem 0.5rem;
+}
+
+.card .stack__view__more{
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card .stack__view__more .more__btn{
+     display: flex;
+     align-items: center;
+     justify-content:center; 
+}
+
+
+
+

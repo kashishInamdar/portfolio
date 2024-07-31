@@ -9,10 +9,10 @@ const Facts = ()=>{
     const [practiceProject , setPracticeProject] = useState(0)
     useEffect(()=>{
         const timeoutId = setTimeout(()=>{
-            setExperirnce(10);
+            setExperirnce(6);
             setProject(5);
             setPracticeProject(10);
-        } , 3000)
+        } , 2000)
 
         return ()=>{
             clearTimeout(timeoutId)
@@ -28,7 +28,7 @@ const Facts = ()=>{
                     />
                     <span className="indicator">+</span>
                 </div>
-                <p className="name">Years Of Experience</p>
+                <p className="name">Month Of Experience</p>
             </div>
 
             <div className="fact__item">

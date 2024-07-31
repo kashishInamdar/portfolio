@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import "./Project.css";
 import { sumArray } from "../../helper";
-import { projects } from "../../data"
+import { projects } from "../../data";
 import Card from "./Card";
 
 const tabs = [
@@ -16,10 +16,10 @@ const Projects = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [offset, setOffset] = useState(0);
     const [indicatorWidth, setIndicatorWidth] = useState(0);
-    const itemsEls = useRef(new Array());
+    const itemsEls = useRef([]);
 
     useEffect(() => {
-        const prevEl = itemsEls.current.filter((_,index) => index < activeIndex);
+        const prevEl = itemsEls.current.filter((_, index) => index < activeIndex);
         setOffset(
             sumArray(
                 prevEl.map(item => item.offsetWidth)
@@ -28,12 +28,15 @@ const Projects = () => {
         setIndicatorWidth(itemsEls.current[activeIndex].offsetWidth);
     }, [activeIndex]);
 
-    const setProjects = (category) =>{
-        if (category === "All"){
-            return setDisplayableProjects(projects)
+    const setProjects = (category) => {
+        if (category === "All") {
+            setDisplayableProjects(projects);
+        } else {
+            const filteredProjects = projects.filter((item) => 
+                item.category.toLowerCase() === category.toLowerCase()
+            );
+            setDisplayableProjects(filteredProjects);
         }
-        const pro = projects.filter((item)=>{item.category.toLowerCase()})
-        setDisplayableProjects(pro)
     }
 
     return (
@@ -49,7 +52,7 @@ const Projects = () => {
                                 ref={el => itemsEls.current[index] = el}
                                 onClick={() => {
                                     setActiveIndex(index);
-                                    setProjects(tab.name)
+                                    setProjects(tab.name);
                                 }}
                                 key={index}
                             >
@@ -67,20 +70,20 @@ const Projects = () => {
                 </nav>
                 <div className="card__container">
                     {
-                        displayableProjects.map((project , index)=>{
-                            const {id ,title , image , category , data , stack } = project;
-                            return(
+                        displayableProjects.map((project, index) => {
+                            const { id, title, image, category, data, stack } = project;
+                            return (
                                 <Card 
-                                    key={index}
+                                    key={id}
                                     title={title}
                                     image={image}
                                     data={data}
                                     stack={stack}
+                                    category={category}
                                     id={id}
                                 />
-                            )
+                            );
                         })
-
                     }
                 </div>
             </div>

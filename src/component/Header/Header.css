@@ -1,6 +1,7 @@
 #header{
     overflow: hidden;
     position: relative;
+    padding-top: 0;
 }
 
 #header.blur-effect::before{
@@ -65,7 +66,7 @@
 #header .header__description{
     font-size: 15px;
     font-weight: 500;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 #header .header__info__bottom{
@@ -77,6 +78,7 @@ gap: 30px;
 
 #header .profile__photo__container{
     width: 400px;
+    /* width: 500px; */
     max-width: 100%;
     position: relative;
     margin: auto;
@@ -87,7 +89,7 @@ gap: 30px;
 #header .profile__photo__container::after{
     position: absolute;
     content: "";
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     width: 100%;
     height: 50%;
